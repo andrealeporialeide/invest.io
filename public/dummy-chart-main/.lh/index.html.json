@@ -1,0 +1,22 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1635953510817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1635953516711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+<!DOCTYPE html>\n+<html lang=\"en\">\n+<head>\n+  <meta charset=\"UTF-8\">\n+  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n+  <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl\" crossorigin=\"anonymous\">\n+  <link rel=\"stylesheet\" href=\"style.css\" />\n+  <title>Chart JS | Tutorial</title>\n+</head>\n+<body>\n+  <div class=\"card text-center m-5\">\n+  <div class=\"card-header\">\n+  <h2>Chart JS Tutorial</h2>\n+  </div>\n+  <canvas id=\"myChart\" ></canvas>\n+</div>\n+  <script src=\"https://cdn.jsdelivr.net/npm/chart.js@2.8.0\"></script>\n+  <script src=\"app.js\"></script>\n+</body>\n+</html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1635953510817,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}

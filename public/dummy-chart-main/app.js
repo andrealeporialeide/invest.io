@@ -17,13 +17,7 @@ const chart = new Chart(ctx, {
             backgroundColor: '',
             borderColor: '#0A2558',
             data: employee_date
-        },
-        {
-          label: 'Employee Date',
-          backgroundColor: '',
-          borderColor: '#0A2558',
-          data: employee_date
-      }
+        }
       ]
     },
 

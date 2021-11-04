@@ -16,7 +16,7 @@ const chart = new Chart(ctx, {
             label: 'Employee Salary',
             backgroundColor: '',
             borderColor: '#0A2558',
-            data: employeeSalaryData
+            data: employee_date
         },
         {
           label: 'Employee Date',

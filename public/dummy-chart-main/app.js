@@ -1,4 +1,5 @@
 var employeeLabel = []
+var employee_date = []
 
 async function dummyChart() {
   await getDummyData()

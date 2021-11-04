@@ -2,10 +2,11 @@
     "status": "success",
     "data": [
     {
+        
     "id": 1,
-    "employee_date": "13/01/2021",
+    "employee_date": "2021/01/12",
     "employee_salary": 320800,
-    "employee_age": "gen",
+    "employee_age": 61,
     "profile_image": ""
     },
     {

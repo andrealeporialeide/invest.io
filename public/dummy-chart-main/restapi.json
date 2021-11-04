@@ -3,9 +3,9 @@
     "data": [
     {
     "id": 1,
-    "employee_date": "13/01/2021",
+    "date": "13/01/2021",
     "employee_salary": 320800,
-    "employee_age": 61,
+    "employee_age": "gen",
     "profile_image": ""
     },
     {
@@ -18,7 +18,7 @@
     {
     "id": 3,
     "employee_date": "13/03/2021",
-    "employee_salary": 86000,
+    "employee_salary": "86000",
     "employee_age": 66,
     "profile_image": ""
     },

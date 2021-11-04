@@ -41,7 +41,7 @@ dummyChart()
 //Fetch Data from API
 
 async function getDummyData() {
-  const apiUrl = "https://json.extendsclass.com/bin/bb073434d9be";
+  const apiUrl = "https://andrealeporialeide.github.io/invest.io/public/dummy-chart-main/restapi.json";
 
   const response = await fetch(apiUrl)
   const barChatData = await response.json()

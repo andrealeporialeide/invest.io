@@ -38,8 +38,6 @@ const chart = new Chart(ctx, {
 dummyChart()
 
 
-//Fetch Data from API
-
 async function getDummyData() {
   const apiUrl = "https://andrealeporialeide.github.io/invest.io/public/dummy-chart-main/restapi.json";
 

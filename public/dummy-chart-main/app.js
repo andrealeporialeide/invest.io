@@ -1,4 +1,4 @@
-var employeeLabel = [], employeeSalaryData = [], employeeAgeData = []
+var employeeLabel = [], employeeSalaryData = [], employee_date" = []
 
 async function dummyChart() {
   await getDummyData()
@@ -19,10 +19,10 @@ const chart = new Chart(ctx, {
             data: employeeSalaryData
         },
         {
-          label: 'Employee Age',
+          label: 'Employee Date',
           backgroundColor: '',
           borderColor: '#0A2558',
-          data: employeeAgeData
+          data: employee_date
       }
       ]
     },

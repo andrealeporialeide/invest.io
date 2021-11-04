@@ -43,6 +43,4 @@ async function getDummyData() {
   const salary = barChatData.data.map((x) => x.employee_salary)
   console.log(salary)
   const employee_date = barChatData.data.map((x) => x.employee_date)
-  employee_date = data
- employeeLabel = date
 }

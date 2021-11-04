@@ -1,4 +1,4 @@
-var employeeLabel = [], employeeSalaryData = [], employee_date" = []
+var employeeLabel = [], employeeSalaryData = [], employee_date = []
 
 async function dummyChart() {
   await getDummyData()
@@ -38,6 +38,8 @@ const chart = new Chart(ctx, {
 dummyChart()
 
 
+//Fetch Data from API
+
 async function getDummyData() {
   const apiUrl = "https://andrealeporialeide.github.io/invest.io/public/dummy-chart-main/restapi.json";
 
@@ -46,10 +48,7 @@ async function getDummyData() {
   
   const salary = barChatData.data.map((x) => x.employee_salary)
   console.log(salary)
-  const age = barChatData.data.map((x) => x.employee_age)
   const date = barChatData.data.map((x) => x.employee_date)
-
- employeeSalaryData = salary
- employeeAgeData = age
+  employee_date = date
  employeeLabel = date
 }

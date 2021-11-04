@@ -1,4 +1,4 @@
-var employeeLabel = [], employeeSalaryData = [], employee_date = []
+var employeeLabel = [], employeeSalaryData = []
 
 async function dummyChart() {
   await getDummyData()

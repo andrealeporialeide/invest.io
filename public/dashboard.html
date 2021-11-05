@@ -7,7 +7,7 @@
     , initial-scale=1.0">
     <!-- Tailwind CSS -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/1.16.1/full.css" integrity="sha512-PmZeib+U3VTIuk9T/JH6pGxFkmaAzvAsRUZe1QJRrlUnQRlcpp9X96MJjJ3L0oDbNHXziIEbKHudiMvb2Ij2fw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/custom.css">
@@ -262,6 +262,71 @@
 
 
 
+  <canvas id="myChart" ></canvas>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="app.js"></script>
+
+<script>
+    var employeeLabel = [], employeeSalaryData = [], employeeAgeData = []
+
+async function dummyChart() {
+  await getDummyData()
+
+const ctx = document.getElementById('myChart').getContext('2d');
+
+const chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: employeeLabel,
+        datasets: [{
+            label: 'Employee Salary',
+            backgroundColor: '',
+            borderColor: '#0A2558',
+            data: employeeSalaryData
+        },
+        {
+          label: 'Employee Age',
+          backgroundColor: '',
+          borderColor: '#0A2558',
+          data: employeeAgeData
+      }
+      ]
+    },
+
+    // Configuration options go here
+    options: {
+      tooltips: {
+        mode: 'index'
+      }
+    }
+})}
+
+dummyChart()
+
+
+//Fetch Data from API
+
+async function getDummyData() {
+  const apiUrl = "https://json.extendsclass.com/bin/bb073434d9be";
+
+  const response = await fetch(apiUrl)
+  const barChatData = await response.json()
+  
+  const salary = barChatData.data.map((x) => x.employee_salary)
+  console.log(salary)
+  const age = barChatData.data.map((x) => x.employee_age)
+  const name = barChatData.data.map((x) => x.employee_name)
+
+ employeeSalaryData = salary
+ employeeAgeData = age
+ employeeLabel = name
+}
+</script>
 <script>
   var employeeLabel = [], employeeSalaryData = [], employeeAgeData = []
 
